@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const { errorMiddleware } = require('./middlewares/error/errorMiddleware');
 
 // App feito de acordo com o que foi feito no Projeto Trybe Futebol Clube - Rafael
 // Única mudança foi construir ele em Javascript e não em Typescript
@@ -25,6 +26,7 @@ class App {
 
     this.app.use(accessControl);
     this.app.use(cors());
+    this.app.use(errorMiddleware)
     this.app.get('/', (_request, response) => {
       response.send();
     });
