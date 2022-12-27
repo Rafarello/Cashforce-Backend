@@ -49,4 +49,10 @@ Buyers.init({
 }
 )
 
+Buyers.Cnpj = Buyers.belongsTo(Cnpj);
+Cnpj.Buyers = Cnpj.hasMany(Buyers);
+
+Buyers.Orders = Buyers.hasMany(Orders);
+Orders.Buyers = Orders.belongsTo(Buyers);
+
 module.exports = Buyers;
