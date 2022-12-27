@@ -26,7 +26,7 @@ class App {
 
     this.app.use(accessControl);
     this.app.use(cors());
-    this.app.use(errorMiddleware)
+
     this.app.get('/', (_request, response) => {
       response.send();
     });
@@ -37,8 +37,9 @@ class App {
   }
 
   start(PORT) {
-      this.app.listen(PORT, () => console.log(`Rodando na porta ${PORT}`));
-  } 
+    this.app.use(errorMiddleware)
+    this.app.listen(PORT, () => console.log(`Rodando na porta ${PORT}`));
+  }
 }
 
 module.exports = App;
