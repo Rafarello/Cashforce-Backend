@@ -1,5 +1,7 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require(".");
+const Orders = require("./Orders");
+const Cnpj = require("./Cnpj");
 
 class Providers extends Model {
   /**
@@ -48,5 +50,11 @@ Providers.init({
   underscored: false
 }
 )
+
+Providers.Orders = Providers.hasMany(Orders);
+Orders.Providers = Orders.belongsTo(Providers);
+
+Providers.Cnpj = Providers.belongsTo(Cnpj);
+Cnpj.Providers = Cnpj.hasMany(Providers);
 
 module.exports = Providers;
