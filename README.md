@@ -16,6 +16,7 @@ Para iniciar o projeto basta seguir os passos a seguir:
 - Baixar uma cópia do repositório ou realizar o clone em sua máquina
 - Executar o comando `npm install` para instalar as dependências
 - Executar o comando `npm start` para iniciar a aplicação
+- Para ambiente de desenvolvimento, recomendado utilizar `npm run dev`
 
 ## Teste
 
