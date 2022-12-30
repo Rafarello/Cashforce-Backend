@@ -9,7 +9,7 @@ Projeto construído em Vue.js para um teste técnico de uma aplicação Fullstac
 - [@RafaelMoraes](https://www.github.com/rafarello)
 
 
-## Documentação
+## Inicialização
 
 Para iniciar o projeto basta seguir os passos a seguir:
 
