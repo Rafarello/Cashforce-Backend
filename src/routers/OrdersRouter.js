@@ -8,7 +8,7 @@ class OrdersRouter {
   }
 
   loadRoutes() {
-    this.router.post('/test', OrdersController.getOrdersInfo);
+    this.router.get('/orders', OrdersController.getOrdersInfo);
   }
 }
 
