@@ -18,7 +18,7 @@ Para iniciar o projeto basta seguir os passos a seguir:
 - Executar o comando `npm start` para iniciar a aplicação
 - Para ambiente de desenvolvimento, recomendado utilizar `npm run dev`
 
-## Teste
+## Sobre
 
 O Teste contempla a criação de uma API conectada a um banco de dados disponibilizado.
 
