@@ -104,11 +104,12 @@ NODE_ENV=development
 
 O arquivo `.env.example` pode ser copiado para facilitar esta configuração
 
-## Teste 
+## Teste - Orders
 
-Foi criado um `Teste` para a rota de Orders utilizando `Chai`, `Sinon` e `Mocha`
+Foi implementado um arquivo de `Teste` para a rota de Orders utilizando `Chai`, `Sinon` e `Mocha`
 
 O script desse teste pode ser executado através de `npm run test`
+
 ## Mock - Orders
 
 Foi utilizado um arquivo auxiliar para o `Mock` de `Orders` e este pode ser encontrado em:
